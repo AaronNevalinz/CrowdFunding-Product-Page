@@ -7,14 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body class="text-base">
     
-    <div class="h-96 flex justify-between text-white bg-no-repeat" style="background: url('./Images/image-hero-desktop.jpg');"><!--Naviagation-->
-        <div class="w-4/5 flex justify-between items-center mx-auto mt-4">
+    <div class="h-96 w-full flex justify-between text-white bg-no-repeat bg-cover relative" style="background: url('./Images/image-hero-desktop.jpg');"><!--Naviagation-->
+        <div class="w-4/5 flex justify-between mx-auto mt-8">
             <div class="font-bold text-2xl">
                 <h1 class="cursor-pointer">crowdfund</h1>
             </div>
-            <ul class="flex font-light">
+            <ul class="flex font-normal">
                 <li class="mr-8">
                     <a href="#">About</a>
                 </li>
@@ -28,75 +28,82 @@
         </div>
     </div>
 
-    <main><!--Content wrapper-->
-        <div>
-            <img src="./Images/logo-mastercraft.svg" alt="Logo-mastercraft">
-            <h1>Mastercraft Bamboo Monitor Riser</h1>
-            <p>
-                A beautiful & handcrafted monitor stand to reduce neck and eye strain.
-            </p>
-            <div>
-                <p>Back this project</p>
-                <div>
-                    <i></i>
-                    <p>Bookmarked</p>
-                </div>
-            </div>
-        </div>
-        
-        <div>
-            <div>
-                <div>
-                    <h1>$89,914</h1>
-                    <p>of $100,000 backed</p>
-                </div>
-                <div>
-                    <h1>5007</h1>
-                    <p>total backers</p>
-                </div>
-                <div>
-                    <h1>56</h1>
-                    <p>days left</p>
-                </div>
-            </div>
-            <div>
-
-            </div>
-        </div>
-
-        <div><!--About this project-->
-            <div>
-                <h2>About this project</h2>
-                <p>
-                    The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+    <main class="bg-gray-100"><!--Content wrapper-->
+        <div class="w-2/5 mx-auto text-center bottom-0">
+            <div class="relative bg-white border px-8 py-8 rounded-lg">
+                <img class="absolute top-0" src="./Images/logo-mastercraft.svg" alt="Logo-mastercraft">
+                <h1 class="font-bold text-lg">Mastercraft Bamboo Monitor Riser</h1>
+                <p class="text-secondary-100 my-3">
+                    A beautiful & handcrafted monitor stand to reduce neck and eye strain.
                 </p>
-                <p>
-                    Featuring artisan craftmanship, the simplicity of design creates desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.
-                </p>
-            </div>
-
-            <div><!--Cards wrapper-->
-
-                <div><!--card goes here-->
+                <div class="flex justify-between">
+                    <p class="bg-primary-200 px-6 py-4 text-white font-medium rounded-full">Back this project</p>
                     <div>
-                        <h2>Bamboo stand </h2>
-                        <p>Pledge $25 or more</p>
-                    </div>
-                    <p>
-                        You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
-                    </p>
-                    <div>
-                        <h1>
-                            <span>101</span>
-                            <span>left</span>
-                        </h1>
-                        <p>
-                            Select Reward
+                        <i></i>
+                        <p class="bg-gray-100 text-primary-200 pr-6 py font-medium rounded-full flex">
+                            <svg class="w-8 fill-white bg-primary-200 px-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                <path fillRule="evenodd" d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z" clipRule="evenodd" />
+                              </svg>  
+                            Bookmarked
                         </p>
                     </div>
-                </div> <!--card ends here-->
-            </div><!--Card wrapper ends here-->
-        </div><!--About this project ends here-->
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <div>
+                        <h1>$89,914</h1>
+                        <p>of $100,000 backed</p>
+                    </div>
+                    <div>
+                        <h1>5007</h1>
+                        <p>total backers</p>
+                    </div>
+                    <div>
+                        <h1>56</h1>
+                        <p>days left</p>
+                    </div>
+                </div>
+                <div>
+    
+                </div>
+            </div>
+    
+            <div><!--About this project-->
+                <div>
+                    <h2>About this project</h2>
+                    <p>
+                        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+                    </p>
+                    <p>
+                        Featuring artisan craftmanship, the simplicity of design creates desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.
+                    </p>
+                </div>
+    
+                <div><!--Cards wrapper-->
+    
+                    <div><!--card goes here-->
+                        <div>
+                            <h2>Bamboo stand </h2>
+                            <p>Pledge $25 or more</p>
+                        </div>
+                        <p>
+                            You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
+                        </p>
+                        <div>
+                            <h1>
+                                <span>101</span>
+                                <span>left</span>
+                            </h1>
+                            <p>
+                                Select Reward
+                            </p>
+                        </div>
+                    </div> <!--card ends here-->
+                </div><!--Card wrapper ends here-->
+            </div><!--About this project ends here-->
+        </div>
     </main>
 </body>
 </html>

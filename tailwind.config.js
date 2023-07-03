@@ -10,7 +10,7 @@ module.exports = {
           100:'hsl(176, 50%, 47%)',
           200:'hsl(176, 72%, 28%)'
         },
-        neutral:{
+        secondary:{
           100:'hsl(0, 0%, 48%)'
         }
       }
