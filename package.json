@@ -1,0 +1,14 @@
+{
+  "name": "crowdfunding-product-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/tailwind_base.css -o ./public/styles.css --watch"
+  },
+  "author": "AaronNevalinz",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
