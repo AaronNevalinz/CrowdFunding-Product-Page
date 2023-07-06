@@ -1,7 +1,7 @@
 {
   "name": "crowdfunding-product-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a solution to the [Crowdfunding product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss -i ./src/tailwind_base.css -o ./public/styles.css --watch"
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronNevalinz/CrowdFunding-Product-Page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AaronNevalinz/CrowdFunding-Product-Page/issues"
+  },
+  "homepage": "https://github.com/AaronNevalinz/CrowdFunding-Product-Page#readme"
 }
