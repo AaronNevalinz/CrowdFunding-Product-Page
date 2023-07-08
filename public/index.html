@@ -9,153 +9,165 @@
 </head>
 <body class="text-base relative">
     
-    <header class="h-[400px] flex justify-between text-white bg-cover bg-center" style="background: url('./Images/image-hero-desktop.jpg');"><!--Naviagation-->
-        <div class="w-4/5 flex justify-between mx-auto mt-8">
-            <div class="font-bold text-2xl">
-                <h1 class="cursor-pointer">crowdfund</h1>
+    <div id="all-content">
+        <header class="h-[400px] flex justify-between text-white bg-cover bg-center" style="background: url('./Images/image-hero-desktop.jpg');"><!--Naviagation-->
+            <div class="w-4/5 flex justify-between mx-auto mt-8">
+                <div class="font-bold text-2xl">
+                    <h1 class="cursor-pointer">crowdfund</h1>
+                </div>
+                <nav>
+                    <ul class="flex font-normal">
+                        <li class="mr-8">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="mr-8">
+                            <a href="#">Discover</a>
+                        </li>
+                        <li>
+                            <a href="#">Get Started</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="flex font-normal">
-                    <li class="mr-8">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="mr-8">
-                        <a href="#">Discover</a>
-                    </li>
-                    <li>
-                        <a href="#">Get Started</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="bg-gray-100"><!--Content wrapper-->
-        <div class="w-2/5 mx-auto text-center relative -top-24">
-            <div class="bg-white border px-8 pb-6 rounded-lg mb-4">
-                <img class="inline-block -mt-8 mb-2" src="./Images/logo-mastercraft.svg" alt="Logo-mastercraft">
-                <h1 class="font-bold text-lg">Mastercraft Bamboo Monitor Riser</h1>
-                <p class="text-secondary-100 my-3">
-                    A beautiful & handcrafted monitor stand to reduce neck and eye strain.
-                </p>
-                <div class="flex justify-between my-8">
-                    <p class="bg-primary-100 hover:bg-primary-200 px-8 py-4 text-white font-medium rounded-full cursor-pointer" id="backup-btn">Back this project</p>
-                    <div class="flex items-center gap-[20px] w-[200px] h-[55px] rounded-[30px] cursor-pointer bg-gray-200">
-                        <div class="w-[55px] h-[55px] text-center rounded-full bg-primary-100 hover:bg-primary-200">
-                            <div class="mt-[15px]">
-                                <svg class="w-6 ml-4 -mb-3 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                    <path fillRule="evenodd" d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z" clipRule="evenodd" />
-                                </svg> 
+        </header>
+    
+        <main class="bg-gray-100" id="content"><!--Content wrapper-->
+            <div class="w-2/5 mx-auto text-center relative -top-24">
+                <div class="bg-white border px-8 pb-6 rounded-lg mb-4">
+                    <img class="inline-block -mt-8 mb-2" src="./Images/logo-mastercraft.svg" alt="Logo-mastercraft">
+                    <h1 class="font-bold text-lg">Mastercraft Bamboo Monitor Riser</h1>
+                    <p class="text-secondary-100 my-3">
+                        A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+                    </p>
+                    <div class="flex justify-between my-8">
+                        <p class="bg-primary-100 hover:bg-primary-200 px-8 py-4 text-white font-medium rounded-full cursor-pointer" id="backup-btn">Back this project</p>
+                        <div class="flex items-center gap-[20px] w-[200px] h-[55px] rounded-[30px] cursor-pointer bg-gray-200">
+                            <div class="w-[55px] h-[55px] text-center rounded-full bg-primary-100 hover:bg-primary-200">
+                                <div class="mt-[15px]">
+                                    <svg class="w-6 ml-4 -mb-3 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                                        <path fillRule="evenodd" d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z" clipRule="evenodd" />
+                                    </svg> 
+                                </div>
                             </div>
+                            <p class="font-bold text-primary-100">Bookmarked</p>
                         </div>
-                        <p class="font-bold text-primary-100">Bookmarked</p>
                     </div>
                 </div>
+                
+                <div class="bg-white border rounded-lg px-8 py-[3rem] mb-4">
+                    <div class="flex justify-between">
+                        <div class="">
+                            <h1 class="font-bold text-4xl">$89,914</h1>
+                            <p class="text-gray-500">of $100,000 backed</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-4xl">5007</h1>
+                            <p class="text-gray-500">total backers</p>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-4xl">56</h1>
+                            <p class="text-gray-500">days left</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-[10px] bg-gray-200 rounded-full mt-[2rem]">
+                        <div class="bg-primary-100 hover:bg-primary-200 w-[80%] h-[10px] rounded-full"></div>
+                    </div>
+                </div>
+        
+                <div class="bg-white border rounded-lg px-8 py-[3rem]"><!--About this project-->
+                    <div class="text-left leading-8 mb-[25px]">
+                        <h2 class="text-black font-bold mb-4">About this project</h2>
+                        <p class="text-gray-600">
+                            The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+                        </p>
+                        <p class="text-gray-600">
+                            Featuring artisan craftmanship, the simplicity of design creates desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.
+                        </p>
+                    </div>
+        
+                    <div><!--Cards wrapper-->
+        
+                        <div class="border p-4 rounded-lg border-gray-300 text-left mb-6"><!--card goes here-->
+                            <div class="flex justify-between">
+                                <h2 class="font-bold text-lg">Bamboo stand </h2>
+                                <p class="text-primary-100 font-medium">Pledge $25 or more</p>
+                            </div>
+                            <p class="text-gray-500 my-4">
+                                You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
+                            </p>
+                            <div class="flex justify-between">
+                                <h1>
+                                    <span class="font-bold text-black text-3xl">101</span>
+                                    <span class="text-gray-500">left</span>
+                                </h1>
+                                <p class="bg-primary-100 hover:bg-primary-200 cursor-pointer text-white rounded-full py-3 px-4 font-medium">
+                                    Select Reward
+                                </p>
+                            </div>
+                        </div> <!--card ends here-->
+    
+                        <div class="border p-4 rounded-lg border-gray-300 text-left mb-6"><!--card goes here-->
+                            <div class="flex justify-between">
+                                <h2 class="font-bold text-lg">Bamboo stand </h2>
+                                <p class="text-primary-100 font-medium">Pledge $25 or more</p>
+                            </div>
+                            <p class="text-gray-500 my-4">
+                                You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
+                            </p>
+                            <div class="flex justify-between">
+                                <h1>
+                                    <span class="font-bold text-black text-3xl">101</span>
+                                    <span class="text-gray-500">left</span>
+                                </h1>
+                                <p class="bg-primary-100 hover:bg-primary-200 cursor-pointer text-white rounded-full py-3 px-4 font-medium">
+                                    Select Reward
+                                </p>
+                            </div>
+                        </div> <!--card ends here-->
+    
+                        <div class="border p-4 rounded-lg border-gray-300 text-left"><!--card goes here-->
+                            <div class="flex justify-between flex-col md:flex-row">
+                                <h2 class="font-bold text-lg">Bamboo stand </h2>
+                                <p class="text-primary-100 font-medium">Pledge $25 or more</p>
+                            </div>
+                            <p class="text-gray-500 my-4">
+                                You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
+                            </p>
+                            <div class="flex justify-between flex-col md:flex-row">
+                                <h1>
+                                    <span class="font-bold text-black text-3xl">101</span>
+                                    <span class="text-gray-500">left</span>
+                                </h1>
+                                <p class="bg-primary-100 hover:bg-primary-200 cursor-pointer text-white rounded-full py-3 px-4 font-medium">
+                                    Select Reward
+                                </p>
+                            </div>
+                        </div> <!--card ends here-->
+                    </div><!--Card wrapper ends here-->
+                </div><!--About this project ends here-->
             </div>
-            
-            <div class="bg-white border rounded-lg px-8 py-[3rem] mb-4">
-                <div class="flex justify-between">
-                    <div class="">
-                        <h1 class="font-bold text-4xl">$89,914</h1>
-                        <p class="text-gray-500">of $100,000 backed</p>
-                    </div>
-                    <div>
-                        <h1 class="font-bold text-4xl">5007</h1>
-                        <p class="text-gray-500">total backers</p>
-                    </div>
-                    <div>
-                        <h1 class="font-bold text-4xl">56</h1>
-                        <p class="text-gray-500">days left</p>
-                    </div>
-                </div>
-                <div class="w-full h-[10px] bg-gray-200 rounded-full mt-[2rem]">
-                    <div class="bg-primary-100 hover:bg-primary-200 w-[80%] h-[10px] rounded-full"></div>
-                </div>
-            </div>
-    
-            <div class="bg-white border rounded-lg px-8 py-[3rem]"><!--About this project-->
-                <div class="text-left leading-8 mb-[25px]">
-                    <h2 class="text-black font-bold mb-4">About this project</h2>
-                    <p class="text-gray-600">
-                        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
-                    </p>
-                    <p class="text-gray-600">
-                        Featuring artisan craftmanship, the simplicity of design creates desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.
-                    </p>
-                </div>
-    
-                <div><!--Cards wrapper-->
-    
-                    <div class="border p-4 rounded-lg border-gray-300 text-left mb-6"><!--card goes here-->
-                        <div class="flex justify-between">
-                            <h2 class="font-bold text-lg">Bamboo stand </h2>
-                            <p class="text-primary-100 font-medium">Pledge $25 or more</p>
-                        </div>
-                        <p class="text-gray-500 my-4">
-                            You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
-                        </p>
-                        <div class="flex justify-between">
-                            <h1>
-                                <span class="font-bold text-black text-3xl">101</span>
-                                <span class="text-gray-500">left</span>
-                            </h1>
-                            <p class="bg-primary-100 hover:bg-primary-200 cursor-pointer text-white rounded-full py-3 px-4 font-medium">
-                                Select Reward
-                            </p>
-                        </div>
-                    </div> <!--card ends here-->
+        </main>
+    </div>
 
-                    <div class="border p-4 rounded-lg border-gray-300 text-left mb-6"><!--card goes here-->
-                        <div class="flex justify-between">
-                            <h2 class="font-bold text-lg">Bamboo stand </h2>
-                            <p class="text-primary-100 font-medium">Pledge $25 or more</p>
-                        </div>
-                        <p class="text-gray-500 my-4">
-                            You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
-                        </p>
-                        <div class="flex justify-between">
-                            <h1>
-                                <span class="font-bold text-black text-3xl">101</span>
-                                <span class="text-gray-500">left</span>
-                            </h1>
-                            <p class="bg-primary-100 hover:bg-primary-200 cursor-pointer text-white rounded-full py-3 px-4 font-medium">
-                                Select Reward
-                            </p>
-                        </div>
-                    </div> <!--card ends here-->
-
-                    <div class="border p-4 rounded-lg border-gray-300 text-left"><!--card goes here-->
-                        <div class="flex justify-between flex-col md:flex-row">
-                            <h2 class="font-bold text-lg">Bamboo stand </h2>
-                            <p class="text-primary-100 font-medium">Pledge $25 or more</p>
-                        </div>
-                        <p class="text-gray-500 my-4">
-                            You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
-                        </p>
-                        <div class="flex justify-between flex-col md:flex-row">
-                            <h1>
-                                <span class="font-bold text-black text-3xl">101</span>
-                                <span class="text-gray-500">left</span>
-                            </h1>
-                            <p class="bg-primary-100 hover:bg-primary-200 cursor-pointer text-white rounded-full py-3 px-4 font-medium">
-                                Select Reward
-                            </p>
-                        </div>
-                    </div> <!--card ends here-->
-                </div><!--Card wrapper ends here-->
-            </div><!--About this project ends here-->
-        </div>
-    </main>
-
- 
-        <div class="w-[100%] h-[100vh] flex justify-center items-center hidden" id="backup-popup">
-            <div class="w-[550px] bg-white border  text-center p-4 rounded-lg absolute transform top-[10%]">
-                <p class="bg-primary-200 inline-block text-white font-black text-5xl p-3 rounded-full mb-4">+</p>
+ <!-- popup starts here -->
+        <div class="flex hidden justify-center items-center" id="backup-popup">
+            <div class="w-[550px] bg-white border  text-center p-4 rounded-lg absolute top-[10%]">
+                <p class="bg-primary-100 inline-block text-white font-black text-5xl p-3 rounded-full mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z" clip-rule="evenodd" />
+                      </svg>
+                      
+                </p>
                 <h2 class="mb-4 font-bold text-[1.5rem]">Thanks for your support</h2>
                 <p class="text-gray-600">Your PLedge brings us one step closer to sharing Mastercraft Bambo Monitor Riser Worldwide. You will get an email once our campaign is completed.</p>
                 <button class="bg-primary-100 hover:bg-primary-200 text-white py-2 px-4 rounded-full font-medium my-4" id="popup-hide">Got it</button>
             </div>
         </div>
+<!-- popup ends here -->
+
+<!-- back this project pop up starts here -->
+
+<!-- back this project pop up ends here -->
 
         <!-- JS scripts starts here -->
         <script src="./popup.js"></script>
