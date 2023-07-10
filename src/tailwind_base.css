@@ -4,8 +4,8 @@
 
 @layer utilities{
     .blur-bg{
-        filter: blur(2px);
-        background: rgba(0, 0, 0, 0.2);
+        background-color: #000000;
+        opacity: 0.6;
         pointer-events: none;
         user-select: none;
         overflow: hidden;
