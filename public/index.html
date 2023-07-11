@@ -186,7 +186,7 @@
                 <p class="text-gray-500 text-sm">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
             </div>
 
-            <div class="border p-6 rounded-lg mb-6"> <!--Pledge card starts here-->
+            <div class="border p-6 rounded-lg mb-6 pledge-card"> <!--Pledge card starts here-->
                 <div class="flex justify-between gap-8 mb-3 items-start">
                     <span>
                         <input type="radio" class="" name="" id="">
@@ -201,7 +201,46 @@
                 
             </div> <!--Pledge card ends here-->
 
-            <div class="border rounded-lg mb-6" id="pledge-card"> <!--Pledge card starts here-->
+            <div class="border rounded-lg mb-6 pledge-card" > <!--Pledge card starts here-->
+                <div class="flex p-6  justify-between gap-8 items-start">
+                    <span class="">
+                        <input type="radio" class="" name="" >  
+                    </span>            
+                    <div>
+                        <div class="flex justify-between mb-4">
+                            <h2 class="font-bold text-base">
+                                <span class="hover:text-primary-100">Bambo Stand</span>
+                                <span class="text-primary-100 ml-4">
+                                    Pledge $25 or more
+                                </span>
+                            </h2>
+                            <p class="font-bold text-base">
+                                101
+                                <span class="font-normal text-gray-500 text-sm">
+                                    left
+                                </span>
+                            </p>
+                        </div>
+                        <p class="text-gray-500 text-sm">
+                            Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="hidden" id="enter-pledge-amount">
+                    <div class="p-6 flex justify-between items-center" >
+                        <div>
+                            <p class="font-medium text-gray-500 text-sm">Enter your Pledge</p>
+                        </div>
+                        <div>
+                            <input type="text" class="border w-[80px] rounded-full text-black px-4 py-2 outline-none font-bold" placeholder="$25" name="" id="">
+                            <button class="bg-primary-100 hover:bg-primary-200 px-4 py-2 rounded-full text-white" id="continue-btn">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--Pledge card ends here-->
+
+            <div class="border rounded-lg mb-6 pledge-card" > <!--Pledge card starts here-->
                 <div class="flex p-6  justify-between gap-8 items-start">
                     <span class="">
                         <input type="radio" name="" id="">  
@@ -240,46 +279,7 @@
                 </div>
             </div> <!--Pledge card ends here-->
 
-            <div class="border rounded-lg mb-6" id="pledge-card"> <!--Pledge card starts here-->
-                <div class="flex p-6  justify-between gap-8 items-start">
-                    <span class="">
-                        <input type="radio" name="" id="">  
-                    </span>            
-                    <div>
-                        <div class="flex justify-between mb-4">
-                            <h2 class="font-bold text-base">
-                                Bambo Stand
-                                <span class="text-primary-100 ml-4">
-                                    Pledge $25 or more
-                                </span>
-                            </h2>
-                            <p class="font-bold text-base">
-                                101
-                                <span class="font-normal text-gray-500 text-sm">
-                                    left
-                                </span>
-                            </p>
-                        </div>
-                        <p class="text-gray-500 text-sm">
-                            Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <div class="hidden" id="enter-pledge-amount">
-                    <div class="p-6 flex justify-between items-center" >
-                        <div>
-                            <p class="font-medium text-gray-500 text-sm">Enter your Pledge</p>
-                        </div>
-                        <div>
-                            <input type="text" class="border w-[80px] rounded-full text-black px-4 py-2 outline-none font-bold" placeholder="$25" name="" id="">
-                            <button class="bg-primary-100 hover:bg-primary-200 px-4 py-2 rounded-full text-white" id="continue-btn">Continue</button>
-                        </div>
-                    </div>
-                </div>
-            </div> <!--Pledge card ends here-->
-
-            <div class="border rounded-lg mb-6" id="pledge-card"> <!--Pledge card starts here-->
+            <div class="border rounded-lg mb-6 pledge-card"> <!--Pledge card starts here-->
                 <div class="flex p-6  justify-between gap-8 items-start">
                     <span class="">
                         <input type="radio" name="" id="">  
@@ -321,6 +321,7 @@
 <!-- back this project pop up ends here -->
 
         <!-- JS scripts starts here -->
+        <script src="./jquery.js"></script>
         <script src="./popup.js"></script>
 </body>
 </html>
