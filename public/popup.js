@@ -22,6 +22,12 @@
         content.classList.remove('h-[100vh]');
     });
 
+    $('.pledge-card').click(function(){
+        $(this).addClass('border-primary-100').siblings().removeClass('border-primary-100');
+    });
+
+    // const cards = document.querySelectorAll('.pledge-card');
+
     // let pledgeCard = document.querySelector('#pledge-card');
     // let pledgeAmount = document.querySelector('#enter-pledge-amount');
     // let continueButton = document.querySelector('#continue-btn');
@@ -47,7 +53,6 @@
     // });
 
 
-    const cards = document.querySelectorAll('.pledge-card');
     // cards.forEach(card=>{
         
     //     const pledgeAmount = document.querySelector('#enter-pledge-amount');
@@ -73,10 +78,11 @@
     //     });
     // });
 
-    $('.pledge-card').click(()=>{
-        $(this).addClass('border-primary-100').siblings().removeClass('border-primary-100');
-    });
+    // $('.pledge-card').click(()=>{
+    //     $(this).addClass('border-primary-100').siblings().removeClass('border-primary-100');
+    // });
 
+    
 
 
 
