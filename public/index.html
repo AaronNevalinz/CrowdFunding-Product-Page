@@ -9,21 +9,27 @@
 </head>
 <body class="text-base">
     
-        <div id="all-content" class="relative z-0">
+        <div id="all-content" class="relative">
                 <header class="h-[400px] flex justify-between text-white bg-cover bg-center" style="background: url('./Images/image-hero-desktop.jpg');"><!--Naviagation-->
-                    <div class="w-4/5 flex justify-between mx-auto mt-8">
-                        <div class="font-bold text-2xl">
-                            <h1 class="cursor-pointer">crowdfund</h1>
+                    <div class="relative w-[90%] md:flex justify-between mx-auto mt-8">
+                        <div class="flex justify-between">
+                            <div class="cursor-pointer">
+                                <img src="./Images/logo.svg" alt="">
+                            </div>
+                            <div class="cursor-pointer md:hidden">
+                                <img class="w-6" src="./Images/icon-hamburger.svg" id="hamburger" alt="">
+                                <img class="w-6 hidden relative z-30" src="./Images/icon-close-menu.svg" id="close-menu" alt="">
+                            </div>
                         </div>
-                        <nav>
-                            <ul class="flex font-normal">
-                                <li class="mr-8">
+                        <nav class="hidden md:block sm:mt-5 relative z-30" id="menu">
+                            <ul class="bg-white md:bg-inherit rounded-lg py-5 md:p-0 text-black md:text-white text-xl md:text-base font-medium flex flex-col md:flex-row divide-y-2 md:divide-y-0">
+                                <li class="mr-8 p-3">
                                     <a href="#">About</a>
                                 </li>
-                                <li class="mr-8">
+                                <li class="mr-8 p-3">
                                     <a href="#">Discover</a>
                                 </li>
-                                <li>
+                                <li class="p-3">
                                     <a href="#">Get Started</a>
                                 </li>
                             </ul>
@@ -46,10 +52,7 @@
                                 </div>
                                 <div class="hidden md:flex items-center gap-[20px] w-[200px] h-[55px] rounded-[30px] cursor-pointer bg-gray-200">
                                     <div class="w-[55px] h-[55px] text-center rounded-full bg-primary-100 hover:bg-primary-200">
-                                        <div class="">
-                                            <!-- <svg class="w-6 ml-4 -mb-3 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                                <path fillRule="evenodd" d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z" clipRule="evenodd" />
-                                            </svg>  -->
+                                        <div class="">                                            
                                             <img src="./Images/icon-bookmark.svg" alt="">
                                         </div>
                                     </div>
@@ -176,7 +179,7 @@
 <!-- end of overlay div -->
 
 <!-- back this project pop up starts here -->
-        <div class="w-[90%] md:w-[60%] lg:w-2/5 border px-[30px] py-[40px] absolute visible -translate-x-[50%] -translate-y-[50%] top-[60%] left-[50%] rounded-lg bg-white hidden z-20" id="back-this-project-popup"> <!--back this project container starts here-->
+        <div class="w-[90%] md:w-[60%] lg:w-2/5 border px-[30px] py-[40px] absolute -translate-x-[50%] -translate-y-[50%] top-[60%] left-[50%] rounded-lg bg-white hidden z-20" id="back-this-project-popup"> <!--back this project container starts here-->
             <div class="mb-8">
                 <div class="flex justify-between mb-3">
                     <h2 class="font-bold text-xl">Back this project</h2>

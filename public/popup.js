@@ -24,88 +24,23 @@
 
     $('.pledge-card').click(function(){
         $(this).addClass('border-primary-100').siblings().removeClass('border-primary-100');
+        $(this).children('#enter-pledge-amount').removeClass('hidden');
     });
 
-    // const cards = document.querySelectorAll('.pledge-card');
+    $('#continue-btn').click(function(){
+        $('#back-this-project-popup').addClass('hidden');
+        $('#thank-you-backup-popup').removeClass('hidden');
+    })
 
-    // let pledgeCard = document.querySelector('#pledge-card');
-    // let pledgeAmount = document.querySelector('#enter-pledge-amount');
-    // let continueButton = document.querySelector('#continue-btn');
-
-    // pledgeCard.addEventListener('click', ()=>{
-    //     pledgeCard.classList.add('border-primary-100')
-    //     pledgeAmount.classList.remove('hidden');
-    // });
-
-    // continueButton.addEventListener('click', ()=>{
-    //     backupPopup.classList.add('visible');
-    //     overlayDiv.classList.remove('hidden');
-    //     backupPopup.classList.remove('hidden');
-    //     content.classList.add('overflow-hidden');
-    //     content.classList.add('h-[100vh]');
-    //     backProjectPopUp.classList.add('hidden')
-    // });
-
-    // popupHidden.addEventListener('click', ()=>{
-    //     backupPopup.classList.add('hidden');
-    //     overlayDiv.classList.add('hidden');
-    //     content.classList.remove('h-[100vh]');
-    // });
-
-
-    // cards.forEach(card=>{
-        
-    //     const pledgeAmount = document.querySelector('#enter-pledge-amount');
-    //     const continueButton = document.querySelector('#continue-btn');
-    //     const backProjectPopUp = document.querySelector('#back-this-project-popup');
-    //     const backupPopup = document.querySelector('#thank-you-backup-popup');
-    //     const popupHidden = document.querySelector('#popup-hide');
-    //     const overlayDiv = document.querySelector('#overlay-div');
-
-    //     card.addEventListener('click', ()=>{
-    //         card.classList.add('border-primary-100');
-    //         pledgeAmount.classList.remove('hidden');
-    //     });
-
-    //     continueButton.addEventListener('click', ()=>{
-    //         backProjectPopUp.classList.add('hidden');
-    //         backupPopup.classList.remove('hidden');
-    //     });
-
-    //     popupHidden.addEventListener('click', ()=>{
-    //         backupPopup.classList.add('hidden');
-    //         overlayDiv.classList.add('hidden');
-    //     });
-    // });
-
-    // $('.pledge-card').click(()=>{
-    //     $(this).addClass('border-primary-100').siblings().removeClass('border-primary-100');
-    // });
-
-    
-
-
-
-
-
-
-
-
-    // const backProjectContainer = document.getElementById('back-this-project-popup');
-    // const cards = document.querySelectorAll('.pledge-card')
-
-    // let selectedElement = null;
-
-    // backProjectContainer.addEventListener('click', function(event){
-    //     if(event.target.classList.contains('pledge-card')){
-    //         const clickedElement = event.target;
-
-    //         if(selectedElement !== null){
-    //             selectedElement.classList.remove('border-primary-100');
-    //         }
-
-    //         clickedElement.classList.add('border-primary-200'); 
-
-    //         selectedElement = clickedElement;
-    //     }
-    // });
+    $('#hamburger').click(function(){
+        $(this).addClass('hidden');
+        $('#close-menu').removeClass('hidden');
+        $('#menu').removeClass('hidden')
+        $('#overlay-div').removeClass('hidden')
+    });
+    $('#close-menu').click(function(){
+        $(this).addClass('hidden');
+        $('#hamburger').removeClass('hidden');
+        $('#menu').addClass('hidden');
+        $('#overlay-div').addClass('hidden')
+    })
