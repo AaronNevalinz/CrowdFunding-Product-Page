@@ -30,3 +30,5 @@ Users should be able to:
 - See the number of total backers increment by one after confirming a pledge
 - Toggle whether or not the product is bookmarked
 
+### Challenges
+- Creating the background opaque, when the user clicks on the buttons to bring the next pop up into focus.

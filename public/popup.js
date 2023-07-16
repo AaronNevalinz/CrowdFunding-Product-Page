@@ -23,8 +23,11 @@
     });
 
     $('.pledge-card').click(function(){
-        $(this).addClass('border-primary-100').siblings().removeClass('border-primary-100');
+        
+        $(this).addClass('border-primary-100 showme').siblings().removeClass('border-primary-100');
+        
         $(this).children('#enter-pledge-amount').removeClass('hidden');
+   
     });
 
     $('#continue-btn').click(function(){
@@ -43,4 +46,4 @@
         $('#hamburger').removeClass('hidden');
         $('#menu').addClass('hidden');
         $('#overlay-div').addClass('hidden')
-    })
+    });
