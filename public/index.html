@@ -46,7 +46,7 @@
                                 A beautiful & handcrafted monitor stand to reduce neck and eye strain.
                             </p>
                             <div class="flex justify-between my-8">
-                                <p class="bg-primary-100 hover:bg-primary-200 px-8 py-4 text-white font-medium rounded-full cursor-pointer" id="backup-btn">Back this project</p>
+                                <p class="bg-primary-100 hover:bg-primary-200 px-8 py-4 text-white font-medium rounded-full cursor-pointer" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal">Back this project</p> <!--modal toggle: for back this project pop up-->
                                 <div class="md:hidden">
                                     <img src="./Images/icon-bookmark.svg" alt="">
                                 </div>
@@ -326,7 +326,140 @@
         </div>
 <!-- back this project pop up ends here -->
 
+
+
+<!-- flowbite test -->
+
+  <!-- Main modal for back this project-->
+  <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 ">
+      <div class="relative w-full max-w-[41%] max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+              </button>
+              <div class="px-6 py-6 lg:px-8">
+                  <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Back this project</h3>
+                  <p class="mb-4 text-gray-500 dark:text-white">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+
+                    <div class="space-y-6" id="accordion-collapse" data-accordion="collapse">
+
+
+                        <div class="border p-6 rounded-lg mb-6  cursor-pointer"> <!--Pledge card starts here-->
+                        <div class="flex justify-between gap-8 mb-3 items-start">
+                            <span>
+                                <input type="radio" class="" name="" id="">
+                            </span>            
+                            <div>
+                                <p class="font-bold text-base cursor-pointer mb-3 dark:text-white">Pledge with no reward</p>
+                                <p class="text-gray-500 text-sm">
+                                    Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.
+                                </p>
+                            </div>
+                        </div>
+                        </div> <!--Pledge card ends here-->
+
+
+                        <!-- Pledge card 1 starts here -->
+                        <div id="accordion-collapse-heading-1">
+                            <div class="border rounded-lg mb-6 pledge-card cursor-pointer" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1"> <!--Pledge card starts here-->
+                                <div class="flex p-6 justify-between gap-8 items-start" >
+                                    <span class="">
+                                        <input type="radio" class="" name="" >  
+                                    </span>            
+                                    <div>
+                                        <div class="flex justify-between mb-4">
+                                            <h2 class="font-bold text-base">
+                                                <span class="text-black hover:text-primary-100">Bambo Stand</span>
+                                                <span class="text-primary-100 ml-4">
+                                                    Pledge $25 or more
+                                                </span>
+                                            </h2>
+                                            <p class="font-bold text-base">
+                                                101
+                                                <span class="font-normal text-gray-500 text-sm">
+                                                    left
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <p class="text-gray-500 text-sm">
+                                            Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div> 
+                        </div>
+                        
+                        <div class="hidden" id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+                            <div class="p-6 flex justify-between items-center" >
+                                <div>
+                                    <p class="font-medium text-gray-500 text-sm">Enter your Pledge</p>
+                                </div>
+                                <div>
+                                    <input type="text" class="border w-[80px] rounded-full text-black px-4 py-2 outline-none font-bold" placeholder="$25" name="" id="">
+                                    <button class="bg-primary-100 hover:bg-primary-200 px-4 py-2 rounded-full text-white" id="continue-btn">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Pledge card ends here-->
+    
+
+                        <!-- pledge card 2 starts here -->
+                        <div id="accordion-collapse-heading-2">
+                            <div class="border rounded-lg mb-6 cursor-pointer" data-accordion-target="#accordion-collapse-body-2" aria-controls="accordion-collapse-body-2" aria-expanded="false"> <!--Pledge card starts here-->
+                                <div class="flex p-6 justify-between gap-8 items-start">
+                                    <span class="">
+                                        <input type="radio" class="" name="" >  
+                                    </span>            
+                                    <div>
+                                        <div class="flex justify-between mb-4">
+                                            <h2 class="font-bold text-base">
+                                                <span class="text-black hover:text-primary-100">Bambo Stand</span>
+                                                <span class="text-primary-100 ml-4">
+                                                    Pledge $25 or more
+                                                </span>
+                                            </h2>
+                                            <p class="font-bold text-base">
+                                                101
+                                                <span class="font-normal text-gray-500 text-sm">
+                                                    left
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <p class="text-gray-500 text-sm">
+                                            Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="hidden" id="accordion-collapse-body-2" aria-labelledby="accordion-collapse-body-2">
+                            <div class="p-6 flex justify-between items-center" >
+                                <div>
+                                    <p class="font-medium text-gray-500 text-sm">Enter your Pledge</p>
+                                </div>
+                                <div>
+                                    <input type="text" class="border w-[80px] rounded-full text-black px-4 py-2 outline-none font-bold" placeholder="$25" name="" id="">
+                                    <button class="bg-primary-100 hover:bg-primary-200 px-4 py-2 rounded-full text-white" id="continue-btn">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Pledge card ends here-->
+
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div> 
+<!-- end of flowbite test -->
+
         <!-- JS scripts starts here -->
+        <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
         <script src="./jquery.js"></script>
         <script src="./popup.js"></script>
 </body>
