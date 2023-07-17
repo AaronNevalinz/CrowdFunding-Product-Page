@@ -30,5 +30,15 @@ Users should be able to:
 - See the number of total backers increment by one after confirming a pledge
 - Toggle whether or not the product is bookmarked
 
+### Built with:
+- Tailwindcss
+- Javascript
+- Flowbite
+- HTML
+
+### What I Leanrt
+- This is actually my first tailwindcss Project after two weeks of learning about the power of tailwindcss
+
 ### Challenges
-- Creating the background opaque, when the user clicks on the buttons to bring the next pop up into focus.
+- Creating the background opaque, when the user clicks on the buttons to bring the next pop up into focus. But after some seroius research figured out to do it using flowbite, incorporated the flowbite accordion components...
+- How to handle the checkbox when the user clicks on the parent container card when choosing to place a pledge.
